@@ -38,5 +38,5 @@ Results are output to "output.csv" in the same directory as the script
     - If multiple results are found, any matches of the preferred publisher will be prioritised.
     - For multiple matches, this script will output the last result found.
     - CV api calls are limited to once every 2 seconds, so this script can take a while for large collections.
-        It is not recommended to reduce this, however you can modify the rate using the CV_API_RATE var.
+      It is not recommended to reduce this, however you can modify the rate using the CV_API_RATE var.
     - If you mess anything up, you can simply delete the output.csv or force a re-run using the Mylar & CV FORCE_RECHECK vars.
