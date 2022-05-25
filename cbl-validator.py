@@ -61,6 +61,11 @@ READINGLIST_DIR = os.path.join(SCRIPT_DIR, "ReadingLists")
 DATA_FILE = os.path.join(DATA_DIR, "data.csv")
 RESULTS_FILE = os.path.join(RESULTS_DIR, "results-%s.txt" % (timeString))
 
+#Create folders if needed
+if not os.path.isdir(DATA_DIR): os.mkdirs(DATA_DIR)
+if not os.path.isdir(RESULTS_DIR): os.mkdirs(RESULTS_DIR)
+if not os.path.isdir(READINGLIST_DIR): os.mkdirs(READINGLIST_DIR)
+
 if TEST_MODE:
     #Create new file instead of overwriting data file
     OUTPUT_FILE = os.path.join(DATA_DIR, "data-%s.csv" % (timeString))
